@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textNoticias2"
+            android:layout_width="190dp"
+            android:layout_height="160dp"
+            android:gravity="center_vertical"
+            android:text="Esportes"
+            android:textAlignment="center"
+            android:textColor="#832828"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="180dp"
+            android:layout_height="160dp"
+            android:onClick="noticiasSaude"
+            android:scaleType="centerCrop"
+            android:src="@drawable/saude"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="180dp"
+            android:layout_height="160dp"
+            android:onClick="noticiasEsporte"
+            android:scaleType="centerCrop"
+            android:src="@drawable/tipos_de_esporte_og"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="180dp"
+            android:layout_height="160dp"
+            android:onClick="noticiasNegocios"
+            android:scaleType="centerCrop"
+            android:src="@drawable/negocios"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="180dp"
+            android:layout_height="160dp"
+            android:onClick="noticiasEntreterimento"
+            android:scaleType="centerCrop"
+            android:src="@drawable/paparazzi"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="180dp"
+            android:layout_height="160dp"
+            android:onClick="noticiasTecnologia"
+            android:scaleType="centerCrop"
+            android:src="@drawable/tecnologia"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="180dp"
+            android:layout_height="160dp"
+            android:onClick="noticiasGerais"
+            android:scaleType="centerCrop"
+            android:src="@drawable/industria_jornais"
+            app:layout_column="1"
+            app:layout_row="2" />
+
+        <TextView
+            android:id="@+id/textNoticias3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Negocios"
+            android:textAlignment="center"
+            android:textColor="#3F51B5"
+            android:textSize="24sp"
+            android:textStyle="bold|italic"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <TextView
+            android:id="@+id/textNoticias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saúde"
+            android:textColor="#E91E63"
+            android:textSize="24sp"
+            android:textStyle="bold|italic"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <TextView
+            android:id="@+id/textNoticias7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Esportes"
+            android:textAlignment="center"
+            android:textColor="#B58E3F"
+            android:textSize="24sp"
+            android:textStyle="bold|italic"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <TextView
+            android:id="@+id/textNoticias4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Entreterimento"
+            android:textAlignment="center"
+            android:textColor="#298595"
+            android:textSize="28sp"
+            android:textStyle="bold|italic"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <TextView
+            android:id="@+id/textNoticias5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Noticias gerais"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="26sp"
+            android:textStyle="bold|italic"
+            app:layout_column="1"
+            app:layout_row="2" />
+
+        <TextView
+            android:id="@+id/textNoticias6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Tecnologia"
+            android:textAlignment="center"
+            android:textColor="#C5BA5E"
+            android:textSize="28sp"
+            android:textStyle="bold|italic"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/buttonLogar"
+            android:layout_width="186dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple_200"
+            android:onClick="minhaConta"
+            android:text="Logar"
+            app:layout_column="0"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/buttonSair"
+            android:layout_width="186dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/fui_bgEmail"
+            android:enabled="false"
+            android:onClick="deslogarUsuario"
+            android:text="Sair"
+            android:visibility="invisible"
+            app:layout_column="1"
+            app:layout_row="3" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="12dp"
+        android:text="Selecione uma categoria"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageLogado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/ic_baseline_account_circle_24"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textLogado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="255dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="38dp"
+        android:text="Minha conta"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toStartOf="@+id/imageLogado"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
