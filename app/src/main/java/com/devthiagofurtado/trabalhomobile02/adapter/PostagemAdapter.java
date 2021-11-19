@@ -17,6 +17,7 @@ import java.util.List;
 
 public class PostagemAdapter extends RecyclerView.Adapter<PostagemAdapter.MyViewHolder> {
     private List<Postagem> postagens;
+
     public PostagemAdapter(List<Postagem> listaPostagens) {
         this.postagens = listaPostagens;
     }
@@ -31,9 +32,9 @@ public class PostagemAdapter extends RecyclerView.Adapter<PostagemAdapter.MyView
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         Postagem postagem = postagens.get(position);
-holder.textNome.setText(postagem.getNome());
-holder.textPostagem.setText(postagem.getPostagem());
-holder.imagePostagem.setImageResource(postagem.getImage());
+        holder.textNome.setText(postagem.getNome());
+        holder.textPostagem.setText(postagem.getPostagem());
+        holder.imagePostagem.setImageResource(postagem.getImage());
     }
 
     @Override

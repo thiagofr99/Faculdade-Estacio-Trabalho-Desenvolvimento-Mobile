@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.devthiagofurtado.trabalhomobile02">
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -10,12 +11,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TrabalhoMobile02">
-        <activity android:name=".api.DetailsActivity"
+        <activity android:name=".activity.NovaNoticiaActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
             ></activity>
-        <activity android:name=".api.NoticesActivity"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
-            ></activity>
+        <activity android:name=".imagem.ImageActivity" />
+        <activity
+            android:name=".api.DetailsActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".api.NoticesActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
             android:name=".activity.CadastroActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />

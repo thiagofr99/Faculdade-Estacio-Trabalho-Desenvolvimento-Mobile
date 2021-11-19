@@ -114,6 +114,10 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void incluirNoticia(View view){
+        startActivity(new Intent(MainActivity.this, NovaNoticiaActivity.class).putExtra("nome",usuarioLogado.getText().toString()));
+    }
+
     @Override
     protected void onStart() {
         super.onStart();
