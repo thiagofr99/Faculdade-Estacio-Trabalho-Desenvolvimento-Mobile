@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private FirebaseAuth usuarioReference = FirebaseAuth.getInstance();
     private TextView usuarioLogado;
     private ImageView imagePerfil;
-    private Button buttonLogar, buttonSair;
+    private Button buttonLogar, buttonSair,buttonCadastrar;
     private FirebaseAuth autenticacao = ConfiguracaoFirebase.getFirebaseAutenticacao();
     private DatabaseReference reference = ConfiguracaoFirebase.getDatabaseReference();
     private DatabaseReference usuarioEnd;
@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         imagePerfil = findViewById(R.id.imageLogado);
         buttonLogar = findViewById(R.id.buttonLogar);
         buttonSair = findViewById(R.id.buttonSair);
+        buttonCadastrar = findViewById(R.id.buttonCadastrar);
 
         verificarUsuarioLogado();
     }
@@ -50,23 +51,23 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void noticiasGerais(View view) {
-        startActivity(new Intent(this, NoticesActivity.class).putExtra("tipo","general"));
+        startActivity(new Intent(MainActivity.this, NoticesActivity.class).putExtra("tipo","general"));
     }
     public void noticiasTecnologia(View view) {
-        startActivity(new Intent(this, NoticesActivity.class).putExtra("tipo","technology"));
+        startActivity(new Intent(MainActivity.this, NoticesActivity.class).putExtra("tipo","technology"));
     }
     public void noticiasEntreterimento(View view) {
-        startActivity(new Intent(this, NoticesActivity.class).putExtra("tipo","entertainment"));
+        startActivity(new Intent(MainActivity.this, NoticesActivity.class).putExtra("tipo","entertainment"));
     }
     public void noticiasSaude(View view) {
-        startActivity(new Intent(this, NoticesActivity.class).putExtra("tipo","health"));
+        startActivity(new Intent(MainActivity.this, NoticesActivity.class).putExtra("tipo","health"));
     }
     public void noticiasEsporte(View view) {
-        startActivity(new Intent(this, NoticesActivity.class).putExtra("tipo","sports"));
+        startActivity(new Intent(MainActivity.this, NoticesActivity.class).putExtra("tipo","sports"));
     }
 
     public void noticiasNegocios(View view) {
-        startActivity(new Intent(this, NoticesActivity.class).putExtra("tipo","business"));
+        startActivity(new Intent(MainActivity.this, NoticesActivity.class).putExtra("tipo","business"));
     }
 
     public void verificarUsuarioLogado() {
@@ -77,6 +78,8 @@ public class MainActivity extends AppCompatActivity {
             buttonSair.setEnabled(true);
             buttonLogar.setVisibility(View.INVISIBLE);
             buttonLogar.setEnabled(false);
+            buttonCadastrar.setEnabled(true);
+            buttonCadastrar.setVisibility(View.VISIBLE);
 
         }
     }

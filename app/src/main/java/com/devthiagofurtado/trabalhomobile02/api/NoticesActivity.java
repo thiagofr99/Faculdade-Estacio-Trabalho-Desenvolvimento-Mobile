@@ -67,4 +67,10 @@ public class NoticesActivity extends AppCompatActivity implements SelectListener
                 DetailsActivity.class).putExtra("data", headlines));
 
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
+    }
 }

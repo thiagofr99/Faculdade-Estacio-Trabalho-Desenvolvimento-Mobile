@@ -41,4 +41,10 @@ public class DetailsActivity extends AppCompatActivity {
         Picasso.get().load(headlines.getUrlToImage()).into(img_news);
 
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
+    }
 }
